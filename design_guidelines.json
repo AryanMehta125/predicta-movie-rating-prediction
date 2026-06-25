@@ -1,0 +1,110 @@
+{
+  "project": "MovieAI / Movie Rating Prediction AI",
+  "theme_and_archetype": {
+    "theme": "dark",
+    "archetype": "Archetype 5 (Luxury) infused with Archetype 7 (Electric & Neon)",
+    "description": "A cinematic, ultra-premium AI SaaS platform. Uses deep obsidian black (#050505) as the base, elevated by glassmorphism and subtle neon edge-lighting in Electric Blue, Purple, and Pink. It feels like a high-end command center for film industry executives mixed with cutting-edge AI labs."
+  },
+  "color_palette": {
+    "css_variables": {
+      "--background": "0 0% 2%",
+      "--foreground": "0 0% 100%",
+      "--card": "0 0% 4%",
+      "--card-foreground": "0 0% 100%",
+      "--popover": "0 0% 4%",
+      "--popover-foreground": "0 0% 100%",
+      "--primary": "186 100% 50%",
+      "--primary-foreground": "0 0% 100%",
+      "--secondary": "266 100% 60%",
+      "--secondary-foreground": "0 0% 100%",
+      "--accent": "330 100% 60%",
+      "--accent-foreground": "0 0% 100%",
+      "--muted": "0 0% 15%",
+      "--muted-foreground": "0 0% 65%",
+      "--border": "0 0% 15%",
+      "--input": "0 0% 15%",
+      "--ring": "186 100% 50%"
+    },
+    "hex_references": {
+      "background": "#050505",
+      "primary_electric_blue": "#00E5FF",
+      "secondary_purple": "#9D4CDD",
+      "accent_pink": "#FF007F"
+    }
+  },
+  "typography": {
+    "setup": "Import via Google Fonts",
+    "fonts": {
+      "headings": "'Outfit', sans-serif",
+      "body": "'Figtree', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-xl md:text-2xl font-semibold",
+      "body": "text-base leading-relaxed text-white/70",
+      "overline": "text-xs font-bold tracking-[0.2em] uppercase text-white/50"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing (p-8 to p-12 standard) with Bento Grids.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6"
+  },
+  "surface_strategies": {
+    "glassmorphism": "bg-white/[0.03] backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl",
+    "tracing_beam": "Animated gradient border (Framer Motion) on primary CTA cards and Prediction Results card using colors [#00E5FF, #9D4CDD, #FF007F]."
+  },
+  "motion_and_animations": {
+    "libraries": ["framer-motion", "gsap"],
+    "scroll_animations": "GSAP for scroll-triggered parallax on background elements and floating movie posters.",
+    "page_transitions": "Framer motion opacity and y-axis shift (y: 20 -> 0) on route changes.",
+    "hover_effects": "Cards lift (-translate-y-1) and increase border opacity. CTAs gain an outer glow.",
+    "counters": "Count-up animations for Prediction Ratings and Sentiment Scores using framer-motion."
+  },
+  "component_strategies": {
+    "buttons": "Shadcn Button heavily customized. Primary: bg-gradient-to-r from-[#00E5FF] to-[#9D4CDD] text-white rounded-full hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] transition-all duration-300. Secondary: bg-white/5 border border-white/10 rounded-full hover:bg-white/10.",
+    "inputs": "Shadcn Input/Select: bg-white/5 border-white/10 focus:border-[#00E5FF] focus:ring-1 focus:ring-[#00E5FF] text-white placeholder:text-white/30 rounded-xl.",
+    "charts": "Recharts: Dark mode grid lines (stroke-white/10). Line/Bar colors use primary neon colors. Tooltips use glassmorphism.",
+    "gauges": "Circular SVG gauges for Rating and Sentiment. Animate stroke-dashoffset on mount."
+  },
+  "accessibility_and_testing": {
+    "data_testid": "ALL interactive and key informational elements MUST include a data-testid attribute in kebab-case (e.g., data-testid='predict-submit-button').",
+    "contrast": "Ensure text over gradients uses text-shadow or dark overlays for readability."
+  },
+  "media_urls": {
+    "hero_background_abstract": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxuZW9uJTIwbGlnaHQlMjBncmFkaWVudCUyMGRhcmt8ZW58MHx8fHwxNzgwNjQ4NDQ1fDA&ixlib=rb-4.1.0&q=85",
+    "floating_movie_posters_wall": "https://images.pexels.com/photos/12838778/pexels-photo-12838778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "tech_abstract_overlay": "https://images.unsplash.com/photo-1770520216935-0d9467753290?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxkYXJrJTIwYWJzdHJhY3QlMjB0ZWNobm9sb2d5JTIwc3BhY2V8ZW58MHx8fHwxNzgwNjQ4NDQ1fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "pages_and_views": {
+    "navbar": "Glassmorphism header (`backdrop-blur-xl bg-black/60`). Logo 'MovieAI', Links: Home, Predict, Sentiment, Analytics, About. CTA: 'Start Prediction'. data-testid='navbar-nav'.",
+    "landing_page": {
+      "hero": "Headline: 'PREDICT MOVIE SUCCESS BEFORE RELEASE' with gradient text effect. Subheading: 'AI-powered movie rating prediction...'. CTAs: 'Predict Rating' and 'Explore Analytics'. Parallax background with animated particles and cinematic orbs.",
+      "features": "Bento grid layout highlighting AI models, dataset scale, and sentiment tech. Use lucide-react icons with neon tints."
+    },
+    "predict_dashboard": {
+      "layout": "Two-column layout. Left: Form inputs inside a glass card. Right: Real-time AI processing terminal visualization (typing effect in JetBrains Mono).",
+      "form": "Fields: Movie Name, Year, Duration, Votes, Genre, Director, Actor 1/2/3. Use Shadcn selects and inputs."
+    },
+    "prediction_results": {
+      "layout": "Central circular gauge for the 1-10 rating. Pulse animation and celebratory subtle effect for ratings > 8.0.",
+      "cards": "Impact cards (Director Impact, Genre Synergy, Voting Impact) positioned around the main rating."
+    },
+    "sentiment_analysis": {
+      "layout": "Large text area for review pasting. Real-time sentiment meter (Red to Green gradient) using Framer Motion layout animations."
+    },
+    "analytics_dashboard": {
+      "layout": "Dense bento grid. Recharts for Rating Distribution (Bar), Genre Performance (Radar or Bar), and Year Trends (Area Chart with gradient fill). Stats cards."
+    },
+    "about_model": {
+      "layout": "Timeline / Pipeline view. Show Kaggle Dataset -> Feature Engineering -> Random Forest -> TextBlob -> Final Output. Use dashed SVG connecting lines."
+    },
+    "footer": "Left '© 2026 Aryan Mehta' / Center 'Movie Rating Prediction AI' / Right 'Data Sources & Credits' (opens CreditsModal).",
+    "credits_modal": {
+      "trigger": "Footer right link.",
+      "content": "Glassmorphic modal with links to Kaggle dataset, GitHub repo, and educational disclaimer."
+    }
+  }
+}
