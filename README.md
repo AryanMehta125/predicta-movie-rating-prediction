@@ -24,15 +24,15 @@ Built with React, FastAPI, MongoDB, and Machine Learning.
 
 ### Home Page
 
-![Home](assets/screenshots/home.png)
+![Home](assets/images/home.png)
 
 ### Prediction Studio
 
-![Predict](assets/screenshots/predict.png)
+![Predict](assets/images/predict.png)
 
 ### Sentiment Intelligence
 
-![Sentiment](assets/screenshots/sentiment.png)
+![Sentiment](assets/images/sentiment.png)
 
 ---
 
